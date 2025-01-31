@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Topik Baru</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Forum Diskusi</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="topic.html">Topik</a>
+            <a href="new-topic.html">Buat Topik Baru</a>
+            <button id="logout-btn" style="float: center;">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Buat Topik Baru</h2>
+        <form id="new-topic-form">
+            <input type="text" id="user-name" placeholder="Masukkan nama Anda" required>
+            <input type="text" id="topic-title" placeholder="Masukkan judul topik" required>
+            <select id="topic-category">
+                <option value="Teknologi">Teknologi</option>
+                <option value="Seni">Seni</option>
+                <option value="Olahraga">Olahraga</option>
+            </select>
+            <textarea id="topic-content" placeholder="Tuliskan isi topik..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <div id="notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

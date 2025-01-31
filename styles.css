@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background: #45a049;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#category-filter {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+#topic-list {
+    margin-bottom: 20px;
+}
+
+.topic {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.topic h3 {
+    margin: 0 0 10px 0;
+}
+
+.topic p {
+    margin: 5px 0;
+}
+
+.comments {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.comment-form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form input,
+.comment-form button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.comment-form input {
+    width: calc(100% - 22px); /* Adjust for padding */
+}
+
+.notification {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+}
+#topic-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#topic-button:hover {
+    background-color: #45a049;
+}
+
+/* Latest News Section */
+.latest-news-section {
+    margin: 20px 0; /* Menambahkan margin untuk jarak dari elemen lain */
+}
+
+.latest-news-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news-card {
+    position: relative;
+    background-color: white;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    overflow: hidden; /* Menghindari konten yang melampaui batas kotak */
+    max-width: 800px; /* Ukuran maksimum untuk kotak */
+    height: 700px; /* Atur tinggi kotak */
+    margin: auto; /* Centering kotak */
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 15px;
+}
+
+.news-card-content h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.news-card-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mengisi seluruh kotak tanpa merusak rasio */
+    position: absolute; /* Membuat gambar berada di seluruh area kotak */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Menempatkan gambar di bawah konten */
+}
+.news-content {
+    position: relative;
+    z-index: 2; /* Menempatkan konten di atas gambar */
+    color: white; /* Warna teks untuk tampil di atas gambar */
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan untuk teks */
+    padding: 15px; /* Jarak teks dari tepi */
+    bottom: 0; /* Menempatkan teks di bawah kotak */
+}
+#logout-btn {
+    background-color: #f43636;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: auto; /* Posisi tombol Logout di sebelah kanan */
+}
+
+#logout-btn:hover {
+    background-color: #d32f2f;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Forum Diskusi</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="topic.html">Topik</a>
+            <a href="new-topic.html">Buat Topik Baru</a>
+            <button id="logout-btn" style="float: center;">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Topik</h2>
+        <select id="category-filter">
+            <option value="Semua Kategori">Semua Kategori</option>
+            <option value="Teknologi">Teknologi</option>
+            <option value="Seni">Seni</option>
+            <option value="Olahraga">Olahraga</option>
+        </select>
+        <div id="topic-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
